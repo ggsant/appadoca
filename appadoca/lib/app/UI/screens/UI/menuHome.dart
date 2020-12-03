@@ -1,6 +1,7 @@
 import 'package:appadoca/app/UI/screens/UI/FoodDetails.dart';
 import 'package:appadoca/app/resources/theme_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class MenuHomeScreen extends StatefulWidget {
   @override
@@ -24,8 +25,9 @@ class _MenuHomeScreenState extends State<MenuHomeScreen> {
         child: Stack(
           children: <Widget>[
             Container(
+              padding: EdgeInsets.only(left: 15, bottom: 30),
               alignment: Alignment.center,
-              child: Image.asset(img, height: 80, fit: BoxFit.fitHeight),
+              child: Image.asset(img, height: 150, fit: BoxFit.fitWidth),
             ),
             Container(
               alignment: Alignment.bottomCenter,
@@ -178,7 +180,7 @@ class _MenuHomeScreenState extends State<MenuHomeScreen> {
               child: TextFormField(
                 decoration: InputDecoration(
                     border: InputBorder.none,
-                    hintText: "Search",
+                    hintText: "Buscar",
                     hintStyle: TextStyle(
                       color: Colors.white,
                       fontSize: 20.0,
@@ -195,13 +197,13 @@ class _MenuHomeScreenState extends State<MenuHomeScreen> {
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: <Widget>[
-                  customMenu("assets/pic51.png", "Food", 0xffF3F3F3),
-                  customMenu("assets/pic52.png", "Snacks", 0xffF3F3F3),
-                  customMenu("assets/pic53.png", "Dessert", 0xffF3F3F3),
-                  customMenu("assets/pic54.png", "Drink", 0xffF3F3F3),
-                  customMenu("assets/pic55.png", "Fish", 0xffF3F3F3),
-                  customMenu("assets/pic56.png", "Food", 0xffF3F3F3),
-                  customMenu("assets/pic57.png", "Juice", 0xffF3F3F3),
+                  customMenu("assets/9.png", "CupCake", 0xffF3F3F3),
+                  customMenu("assets/10.png", "Bolos", 0xffF3F3F3),
+                  customMenu("assets/11.png", "Salgados", 0xffF3F3F3),
+                  customMenu("assets/12.png", "Pães", 0xffF3F3F3),
+                  customMenu("assets/13.png", "Tortas", 0xffF3F3F3),
+                  customMenu("assets/14.png", "Bebidas", 0xffF3F3F3),
+                  customMenu("assets/9.png", "Muffins", 0xffF3F3F3),
                 ],
               ),
             ),
@@ -209,7 +211,7 @@ class _MenuHomeScreenState extends State<MenuHomeScreen> {
               padding:
                   const EdgeInsets.symmetric(horizontal: 5.0, vertical: 10.0),
               child: Text(
-                "Food Menu",
+                "Menu",
                 style: TextStyle(
                     fontSize: 30.0,
                     fontWeight: FontWeight.w700,
@@ -235,7 +237,7 @@ class _MenuHomeScreenState extends State<MenuHomeScreen> {
                             height: 10.0,
                           ),
                           bigContainer(
-                            "Bolos",
+                            "Bolo",
                             "assets/bolo2.png",
                             Colors.yellow[100],
                           ),
@@ -244,7 +246,7 @@ class _MenuHomeScreenState extends State<MenuHomeScreen> {
                           ),
                           bigContainer(
                             "Pães",
-                            "assets/pic21.png",
+                            "assets/15.png",
                             Colors.brown[100],
                           ),
                           SizedBox(
@@ -252,7 +254,7 @@ class _MenuHomeScreenState extends State<MenuHomeScreen> {
                           ),
                           bigContainer(
                             "Doces",
-                            "assets/pic31.png",
+                            "assets/8.png",
                             Colors.pink[100],
                           ),
                         ],
@@ -263,32 +265,32 @@ class _MenuHomeScreenState extends State<MenuHomeScreen> {
                       child: Column(
                         children: <Widget>[
                           smallContainer(
-                            "Big Burgers",
-                            "assets/pic5.png",
+                            "Panetone",
+                            "assets/7.png",
                             Colors.indigo[100],
                           ),
                           SizedBox(
                             height: 10.0,
                           ),
                           smallContainer(
-                            "Snaks",
-                            "assets/pic5.png",
+                            "Bolo",
+                            "assets/bolo3.png",
                             Colors.orange[100],
                           ),
                           SizedBox(
                             height: 10.0,
                           ),
                           smallContainer(
-                            "Pizza",
-                            "assets/pic34.png",
+                            "CupCake",
+                            "assets/4.png",
                             Colors.teal[100],
                           ),
                           SizedBox(
                             height: 10.0,
                           ),
                           smallContainer(
-                            "Pizza",
-                            "assets/pic34.png",
+                            "Bolo",
+                            "assets/bolo4.png",
                             Colors.teal[100],
                           ),
                         ],
@@ -338,7 +340,7 @@ class _MenuHomeScreenState extends State<MenuHomeScreen> {
                       icon: Icon(
                         Icons.fullscreen_exit,
                         size: 28.0,
-                        color: Colors.deepOrange,
+                        color: ThemeColors.kPrimaryColor,
                       ),
                       onPressed: () {})),
               IconButton(
@@ -353,10 +355,15 @@ class _MenuHomeScreenState extends State<MenuHomeScreen> {
                 width: 62,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12.0),
-                  color: Colors.pink[100],
                 ),
-                child: Image.asset("assets/user2.png",
-                    height: 42, fit: BoxFit.fitHeight),
+                child: IconButton(
+                  icon: Icon(
+                    MdiIcons.accountArrowRightOutline,
+                    size: 28.0,
+                    color: Colors.black,
+                  ),
+                  onPressed: () {},
+                ),
               ),
             ],
           ),
