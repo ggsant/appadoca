@@ -14,3 +14,13 @@ A equipe levou como prêmio a participação em programas de aceleração, como 
 - [Jornal da unesp](https://www.faac.unesp.br/#!/noticia/1841/appadoca-iniciativa-ajuda-mulheres-desempregadas-na-quarentena)
 - [Jornal da Usp](https://jornal.usp.br/universidade/solucoes-inovadoras-para-ajudar-na-pandemia-serao-startups-na-usp/), 
 - [Startup Lab Neu](http://startuplabneu.com/a-pre-aceleracao/), 
+
+# Telas ja desenvolvidas
+
+![Screenshot_20201203-105140](https://user-images.githubusercontent.com/61892998/101029929-f2640480-3557-11eb-99d6-b98c82840641.jpg)
+![Screenshot_20201203-105152](https://user-images.githubusercontent.com/61892998/101029950-f3953180-3557-11eb-9059-8a8995f83254.jpg)
+![Screenshot_20201203-105210](https://user-images.githubusercontent.com/61892998/101029970-f55ef500-3557-11eb-8b12-ca705be10ab7.jpg)
+![Screenshot_20201203-105226](https://user-images.githubusercontent.com/61892998/101029982-f5f78b80-3557-11eb-8974-a32942b6f53e.jpg)
+![Screenshot_20201203-105244](https://user-images.githubusercontent.com/61892998/101029988-f5f78b80-3557-11eb-9ced-a5bec47186ea.jpg)
+![Screenshot_20201203-105251](https://user-images.githubusercontent.com/61892998/101029996-f6902200-3557-11eb-9277-223a26b7f1a2.jpg)
+![Screenshot_20201203-105308](https://user-images.githubusercontent.com/61892998/101030007-f728b880-3557-11eb-9df4-c7044522a2dd.jpg)
