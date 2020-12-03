@@ -15,8 +15,8 @@ class _MenuHomeScreenState extends State<MenuHomeScreen> {
             MaterialPageRoute(builder: (context) => FoodDetails(text, img)));
       },
       child: Container(
-        height: 135,
-        width: 135,
+        height: 150,
+        width: 160,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12.0),
           color: color,
@@ -53,7 +53,7 @@ class _MenuHomeScreenState extends State<MenuHomeScreen> {
             MaterialPageRoute(builder: (context) => FoodDetails(text, img)));
       },
       child: Container(
-        height: 180,
+        height: 150,
         width: 160,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12.0),
@@ -62,6 +62,7 @@ class _MenuHomeScreenState extends State<MenuHomeScreen> {
         child: Stack(
           children: <Widget>[
             Container(
+                padding: EdgeInsets.only(left: 15, bottom: 30),
                 alignment: Alignment.center,
                 child: Image.asset(img, height: 150, fit: BoxFit.fitWidth)),
             Container(
@@ -206,7 +207,7 @@ class _MenuHomeScreenState extends State<MenuHomeScreen> {
             ),
             Padding(
               padding:
-                  const EdgeInsets.symmetric(horizontal: 16.0, vertical: 10.0),
+                  const EdgeInsets.symmetric(horizontal: 5.0, vertical: 10.0),
               child: Text(
                 "Food Menu",
                 style: TextStyle(
@@ -222,27 +223,27 @@ class _MenuHomeScreenState extends State<MenuHomeScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                      padding: const EdgeInsets.symmetric(horizontal: 10.0),
                       child: Column(
                         children: <Widget>[
                           bigContainer(
-                            "Burgers",
-                            "assets/pic3.png",
+                            "Cup Cake",
+                            "assets/1.png",
                             Colors.red[100],
                           ),
                           SizedBox(
                             height: 10.0,
                           ),
                           bigContainer(
-                            "Breckfast",
-                            "assets/pic11.png",
+                            "Bolos",
+                            "assets/bolo2.png",
                             Colors.yellow[100],
                           ),
                           SizedBox(
                             height: 10.0,
                           ),
                           bigContainer(
-                            "Pizza",
+                            "Pães",
                             "assets/pic21.png",
                             Colors.brown[100],
                           ),
@@ -250,21 +251,17 @@ class _MenuHomeScreenState extends State<MenuHomeScreen> {
                             height: 10.0,
                           ),
                           bigContainer(
-                            "Burgers",
+                            "Doces",
                             "assets/pic31.png",
                             Colors.pink[100],
                           ),
                         ],
                       ),
                     ),
-                    Spacer(),
                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                      padding: const EdgeInsets.symmetric(horizontal: 10.0),
                       child: Column(
                         children: <Widget>[
-                          SizedBox(
-                            height: 10.0,
-                          ),
                           smallContainer(
                             "Big Burgers",
                             "assets/pic5.png",
@@ -290,25 +287,9 @@ class _MenuHomeScreenState extends State<MenuHomeScreen> {
                             height: 10.0,
                           ),
                           smallContainer(
-                            "Burgers",
-                            "assets/pic22.png",
-                            Colors.lime[100],
-                          ),
-                          SizedBox(
-                            height: 10.0,
-                          ),
-                          smallContainer(
-                            "Breakfast",
-                            "assets/pic33.png",
-                            Colors.cyan[100],
-                          ),
-                          SizedBox(
-                            height: 10.0,
-                          ),
-                          smallContainer(
-                            "Donut",
-                            "assets/pic35.png",
-                            Colors.amber[100],
+                            "Pizza",
+                            "assets/pic34.png",
+                            Colors.teal[100],
                           ),
                         ],
                       ),

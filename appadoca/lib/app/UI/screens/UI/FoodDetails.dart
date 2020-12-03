@@ -107,16 +107,16 @@ class _FoodDetailsState extends State<FoodDetails>
             controller: tabController,
             tabs: <Widget>[
               Tab(
-                child: Text("All Burgers"),
+                child: Text("Menu"),
               ),
               Tab(
-                child: Text("Popular"),
+                child: Text("Populares"),
               ),
               Tab(
-                child: Text("New Items"),
+                child: Text("Novos Itens"),
               ),
               Tab(
-                child: Text("Hot Deal"),
+                child: Text("Promoções"),
               ),
             ],
           ),

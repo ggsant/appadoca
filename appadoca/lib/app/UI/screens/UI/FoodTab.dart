@@ -44,14 +44,13 @@ class _FoodTabState extends State<FoodTab> {
                   width: MediaQuery.of(context).size.width * 0.30,
                   child: Column(
                     children: <Widget>[
-                      itemMenu("assets/pic2.png", Colors.transparent),
-                      itemMenu("assets/pic3.png", Colors.transparent),
-                      itemMenu("assets/pic4.png", Colors.transparent),
-                      itemMenu("assets/pic5.png", Colors.grey[200]),
-                      itemMenu("assets/pic2.png", Colors.transparent),
-                      itemMenu("assets/pic3.png", Colors.transparent),
-                      itemMenu("assets/pic4.png", Colors.transparent),
-                      itemMenu("assets/pic5.png", Colors.transparent),
+                      itemMenu("assets/1.png", Colors.grey[500]),
+                      itemMenu("assets/2.png", Colors.grey[500]),
+                      itemMenu("assets/3.png", Colors.grey[500]),
+                      itemMenu("assets/4.png", Colors.grey[500]),
+                      itemMenu("assets/5.png", Colors.grey[200]),
+                      itemMenu("assets/1.png", Colors.grey[500]),
+                      itemMenu("assets/2.png", Colors.grey[500]),
                     ],
                   ),
                 )
@@ -79,7 +78,7 @@ class _FoodTabState extends State<FoodTab> {
                   Wrap(
                     children: <Widget>[
                       Text(
-                        "Double Pizza",
+                        "Cup Cake",
                         style: TextStyle(
                           fontSize: 32.0,
                           fontWeight: FontWeight.w800,
@@ -93,7 +92,7 @@ class _FoodTabState extends State<FoodTab> {
                     height: 8,
                   ),
                   Text(
-                    "Weight -350 g",
+                    "1 Unidade",
                     style: TextStyle(
                       fontSize: 16.0,
                       color: Colors.white,
@@ -103,7 +102,7 @@ class _FoodTabState extends State<FoodTab> {
                     height: 8,
                   ),
                   Text(
-                    "\$ 7.99",
+                    "\$ 4.99",
                     style: TextStyle(
                         fontSize: 42.0,
                         color: ThemeColors.kPrimaryColor,
@@ -115,7 +114,7 @@ class _FoodTabState extends State<FoodTab> {
                   Wrap(
                     children: <Widget>[
                       Text(
-                        "The McDonald's Double Cheeseburger features two 100% pure beef burger patties seasoned with just a pinch of salt and pepper. It's topped with tangy pickles, chopped onions, ketchup, mustard and two slices of melty American cheese. It contains no artificial flavors, preservatives or added colors from artificial sources",
+                        "Bolo de baunilha com recheio de geleia caseira de frutas vermelhas e cobertura de ganache de chocolate branco.",
                         style: TextStyle(
                           fontSize: 18.0,
                           letterSpacing: 0.85,
