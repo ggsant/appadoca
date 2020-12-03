@@ -1,10 +1,6 @@
-import 'package:appadoca/app/UI/widgets/button.dart';
 import 'package:appadoca/app/UI/widgets/buttons_loggin.dart';
-import 'package:appadoca/app/UI/widgets/custom_text.dart';
-import 'package:appadoca/app/resources/strings.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter/material.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class HomeScreen extends StatefulWidget {
   HomeScreen({Key key}) : super(key: key);

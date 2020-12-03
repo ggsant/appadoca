@@ -1,9 +1,6 @@
-import 'package:appadoca/app/UI/widgets/button.dart';
-import 'package:appadoca/app/UI/widgets/custom_text.dart';
 import 'package:appadoca/app/UI/widgets/title.dart';
 import 'package:appadoca/app/resources/strings.dart';
 import 'package:flutter/material.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class OnboardingScreen extends StatefulWidget {
   OnboardingScreen({Key key}) : super(key: key);

@@ -1,6 +1,7 @@
 import 'package:appadoca/app/UI/widgets/button.dart';
 import 'package:appadoca/app/resources/strings.dart';
 import 'package:appadoca/app/resources/theme_colors.dart';
+import 'package:appadoca/app/utils/routes.dart';
 import 'package:flutter/material.dart';
 
 class ButtonsLogin extends StatelessWidget {
@@ -21,19 +22,19 @@ class ButtonsLogin extends StatelessWidget {
             ButtonLogin(
               text: Strings.LOGIN_FACE,
               onPressed: () {
-                // Navigator.pushNamed(context, CatalogScreenRoute);
+                Navigator.pushNamed(context, SignInStepOneScreenRoute);
               },
             ),
             ButtonLogin(
               text: Strings.LOGIN_PHONE,
               onPressed: () {
-                // Navigator.pushNamed(context, OnboardingScreenRoute);
+                Navigator.pushNamed(context, SignInStepOneScreenRoute);
               },
             ),
             ButtonLogin(
               text: Strings.LOGIN_EMAIL,
               onPressed: () {
-                // Navigator.pushNamed(context, OnboardingScreenRoute);
+                Navigator.pushNamed(context, SignInStepOneScreenRoute);
               },
             ),
             Text(Strings.CREATED_ACCOUNT,

@@ -1,8 +1,7 @@
+import 'package:appadoca/app/UI/screens/home.dart';
 import 'package:appadoca/app/utils/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/screenutil.dart';
-
-import 'app/UI/screens/home.dart';
 
 void main() {
   runApp(OneWidgetPerDay());
