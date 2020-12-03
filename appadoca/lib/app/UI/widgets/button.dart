@@ -43,6 +43,7 @@ class ButtonSignIn extends StatelessWidget {
       height: 50,
       color: Colors.pink[800],
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(text, style: TextStyle(fontSize: 20, color: Colors.white)),
           SizedBox(width: 5),

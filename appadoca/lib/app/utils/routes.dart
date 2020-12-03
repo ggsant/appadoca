@@ -1,6 +1,8 @@
 import 'package:appadoca/app/UI/screens/UI/menuHome.dart';
+import 'package:appadoca/app/UI/screens/create_account.dart';
 import 'package:appadoca/app/UI/screens/home.dart';
 import 'package:appadoca/app/UI/screens/onboarding.dart';
+import 'package:appadoca/app/UI/screens/profile.dart';
 import 'package:appadoca/app/UI/screens/sign/signIn_step1.dart';
 import 'package:appadoca/app/UI/screens/sign/signIn_step2.dart';
 import 'package:flutter/material.dart';
@@ -9,6 +11,9 @@ const String HomeScreenRoute = '/';
 const String OnboardingScreenRoute = '/onboardingRoute';
 const String SignInStepOneScreenRoute = '/signInStepOneRoute';
 const String SignInStepTwoScreenRoute = '/signInStepTwoRoute';
+const String CreateAccountScreenRoute = '/createAccountRoute';
+const String ProfileScreenRoute = '/profileRoute';
+
 const String MenuHomeScreenRoute = '/menuHomeRoute';
 
 RouteFactory routes() {
@@ -29,8 +34,14 @@ RouteFactory routes() {
       case SignInStepTwoScreenRoute:
         screen = SignInStepTwoScreen();
         break;
+      case CreateAccountScreenRoute:
+        screen = CreateAccountScreen();
+        break;
       case MenuHomeScreenRoute:
         screen = MenuHomeScreen();
+        break;
+      case ProfileScreenRoute:
+        screen = ProfileScreen();
         break;
 
       default:

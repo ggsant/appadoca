@@ -37,11 +37,17 @@ class ButtonsLogin extends StatelessWidget {
                 Navigator.pushNamed(context, SignInStepOneScreenRoute);
               },
             ),
-            Text(Strings.CREATED_ACCOUNT,
+            ButtonLogin(
+              text: Strings.CREATED_ACCOUNT,
+              onPressed: () {
+                Navigator.pushNamed(context, CreateAccountScreenRoute);
+              },
+            ),
+            Text(Strings.CREATED_BY,
                 style: TextStyle(
                   color: ThemeColors.secondaryTextColor,
                   fontWeight: FontWeight.bold,
-                  fontSize: 15.0,
+                  fontSize: 18.0,
                 )),
           ],
         ),
