@@ -13,42 +13,46 @@ class ButtonsLogin extends StatelessWidget {
         padding: const EdgeInsets.all(8.0),
         child: Column(
           children: [
-            Text(Strings.CREATE_ACCOUNT,
-                style: TextStyle(
-                  color: ThemeColors.secondaryTextColor,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 18.0,
-                )),
+            Text(
+              Strings.loginText,
+              style: TextStyle(
+                color: ThemeColors.secondaryTextColor,
+                fontWeight: FontWeight.bold,
+                fontSize: 18.0,
+              ),
+            ),
             ButtonLogin(
-              text: Strings.LOGIN_FACE,
+              text: Strings.loginFace,
               onPressed: () {
                 Navigator.pushNamed(context, SignInStepOneScreenRoute);
               },
             ),
             ButtonLogin(
-              text: Strings.LOGIN_PHONE,
+              text: Strings.loginCel,
               onPressed: () {
                 Navigator.pushNamed(context, SignInStepOneScreenRoute);
               },
             ),
             ButtonLogin(
-              text: Strings.LOGIN_EMAIL,
+              text: Strings.loginEmail,
               onPressed: () {
                 Navigator.pushNamed(context, SignInStepOneScreenRoute);
               },
             ),
             ButtonLogin(
-              text: Strings.CREATED_ACCOUNT,
+              text: Strings.createAccount,
               onPressed: () {
                 Navigator.pushNamed(context, CreateAccountScreenRoute);
               },
             ),
-            Text(Strings.CREATED_BY,
-                style: TextStyle(
-                  color: ThemeColors.secondaryTextColor,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 18.0,
-                )),
+            Text(
+              Strings.createAccount,
+              style: TextStyle(
+                color: ThemeColors.secondaryTextColor,
+                fontWeight: FontWeight.bold,
+                fontSize: 18.0,
+              ),
+            ),
           ],
         ),
       ),

@@ -20,7 +20,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             SizedBox(height: 30),
             TitleFont(
               fontSize: 40,
-              text: Strings.TITLE_LOGIN_SCREEN,
+              text: Strings.title,
             ),
           ],
         ),
