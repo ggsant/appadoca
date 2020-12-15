@@ -57,30 +57,21 @@ class BigContainer extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        height: 150,
-        width: 160,
+        height: 180,
+        width: 350,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(12.0),
+          borderRadius: BorderRadius.circular(15.0),
           color: color,
         ),
-        child: Stack(
+        child: Column(
           children: <Widget>[
-            Container(
-                padding: EdgeInsets.only(left: 15, bottom: 30),
-                alignment: Alignment.center,
-                child: Image.asset(img, height: 150, fit: BoxFit.fitWidth)),
-            Container(
-              alignment: Alignment.bottomCenter,
-              child: Padding(
-                padding: const EdgeInsets.symmetric(vertical: 16.0),
-                child: Text(
-                  text,
-                  style: TextStyle(
-                    fontSize: 20.0,
-                    fontWeight: FontWeight.w600,
-                    color: ThemeColors.primaryTextColor,
-                  ),
-                ),
+            Image.asset(img, height: 80, fit: BoxFit.fitWidth),
+            Text(
+              text,
+              style: TextStyle(
+                fontSize: 20.0,
+                fontWeight: FontWeight.w600,
+                color: ThemeColors.primaryTextColor,
               ),
             )
           ],

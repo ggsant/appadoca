@@ -8,21 +8,6 @@ class CustomAppBar extends StatelessWidget {
     return Column(
       children: <Widget>[
         SizedBox(height: 22.0),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16.0),
-          child: Row(
-            children: <Widget>[
-              Icon(
-                Icons.timeline,
-                size: 28.0,
-                color: ThemeColors.kPrimaryColor,
-              ),
-              Spacer(),
-              ShoppingCart()
-            ],
-          ),
-        ),
-        SizedBox(height: 16.0),
         Container(
           margin: EdgeInsets.all(16.0),
           height: 52.0,

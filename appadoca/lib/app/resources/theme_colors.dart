@@ -9,4 +9,5 @@ class ThemeColors {
   static const Color terciaryColor = Color.fromRGBO(32, 32, 32, 1);
   static const Color backgroundColor = Color(0xFF202020);
   static Color kPrimaryColor = Colors.pink[800];
+  static Color kSecondaryColor = Colors.pink[400];
 }

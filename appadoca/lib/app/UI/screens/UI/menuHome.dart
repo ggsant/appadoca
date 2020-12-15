@@ -7,8 +7,12 @@ import 'package:appadoca/app/UI/widgets/shoppingCart.dart';
 import 'package:appadoca/app/UI/widgets/title.dart';
 import 'package:appadoca/app/resources/theme_colors.dart';
 import 'package:appadoca/app/utils/routes.dart';
+import 'package:custom_bottom_navigation_bar/custom_bottom_navigation_bar.dart';
+import 'package:custom_bottom_navigation_bar/custom_bottom_navigation_bar_item.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+
+import 'inicio.dart';
 
 class MenuHomeScreen extends StatefulWidget {
   @override
@@ -25,47 +29,66 @@ class _MenuHomeScreenState extends State<MenuHomeScreen> {
   ];
   @override
   Widget build(BuildContext context) {
+    PageController _pageController = PageController();
     return SafeArea(
       child: Scaffold(
         backgroundColor: ThemeColors.terciaryColor,
-        body: _telas[_indiceAtual],
-        bottomNavigationBar: BottomNavigationBar(
-          currentIndex: _indiceAtual,
-          onTap: onTabTapped,
-          items: [
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.home,
-                size: 32.0,
-                color: Colors.black,
+        body: PageView(
+          controller: _pageController,
+          children: <Widget>[
+            InicioScreen(),
+            Center(
+              child: Icon(
+                Icons.near_me,
+                color: Colors.yellow,
               ),
-              label: "Inicio",
             ),
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.search,
-                size: 32.0,
-                color: Colors.black,
+            Center(
+              child: Icon(
+                Icons.shopping_cart,
+                color: Colors.blue,
               ),
-              label: "Busca",
             ),
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.list_alt,
-                size: 32.0,
-                color: Colors.black,
+            Center(
+              child: Icon(
+                Icons.shopping_cart,
+                color: Colors.green,
               ),
-              label: "Busca",
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(
-                MdiIcons.accountArrowRightOutline,
-                size: 28.0,
-                color: Colors.black,
-              ),
-              label: "Perfil",
             ),
           ],
+        ),
+        bottomNavigationBar: Container(
+          height: 110,
+          child: CustomBottomNavigationBar(
+            backgroundColor: ThemeColors.terciaryColor,
+            itemBackgroudnColor: ThemeColors.kPrimaryColor,
+            itemOutlineColor: ThemeColors.kPrimaryColor,
+            selectedItemColor: Colors.white,
+            unselectedItemColor: Colors.white,
+            items: [
+              CustomBottomNavigationBarItem(
+                icon: Icons.home,
+                title: "Início",
+              ),
+              CustomBottomNavigationBarItem(
+                icon: MdiIcons.sale,
+                title: "Busca",
+              ),
+              CustomBottomNavigationBarItem(
+                icon: Icons.list_alt,
+                title: "Pedidos",
+              ),
+              CustomBottomNavigationBarItem(
+                icon: Icons.person,
+                title: "Perfil",
+              ),
+            ],
+            onTap: (index) {
+              _pageController.animateToPage(index,
+                  curve: Curves.fastLinearToSlowEaseIn,
+                  duration: Duration(milliseconds: 600));
+            },
+          ),
         ),
       ),
     );

@@ -29,15 +29,12 @@ class TitleHome extends StatelessWidget {
   final String title;
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 5.0, vertical: 10.0),
-      child: Text(
-        title,
-        style: TextStyle(
-          fontSize: 30.0,
-          fontWeight: FontWeight.w700,
-          color: ThemeColors.secondaryTextColor,
-        ),
+    return Text(
+      title,
+      style: TextStyle(
+        fontSize: 30.0,
+        fontWeight: FontWeight.w700,
+        color: ThemeColors.secondaryTextColor,
       ),
     );
   }

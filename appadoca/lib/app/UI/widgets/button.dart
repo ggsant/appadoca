@@ -54,3 +54,34 @@ class ButtonSignIn extends StatelessWidget {
     );
   }
 }
+
+class ButtonDetailsPage extends StatelessWidget {
+  ButtonDetailsPage({
+    this.text,
+    this.onPressed,
+  });
+
+  final String text;
+  final Function onPressed;
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialButton(
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(25.0),
+      ),
+      minWidth: 250.0,
+      height: 50,
+      color: Colors.pink[800],
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text(text, style: TextStyle(fontSize: 20, color: Colors.white)),
+          SizedBox(width: 5),
+          Icon(Icons.add_shopping_cart_rounded, color: Colors.white, size: 20),
+        ],
+      ),
+      onPressed: onPressed,
+    );
+  }
+}

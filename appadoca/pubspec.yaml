@@ -25,19 +25,19 @@ dependencies:
     sdk: flutter
   animated_text_kit: ^2.5.4
   cupertino_icons: ^1.0.0
+  custom_bottom_navigation_bar: ^0.0.1
   flutter_mobx: ^1.1.0+2
   flutter_screenutil: 3.0.0-beta.2
   form_field_validator: ^1.0.1
   google_fonts: ^1.1.1
   material_design_icons_flutter: ^4.0.5755
   mobx: ^1.2.1+4
-  
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  mobx_codegen: ^1.1.2
   build_runner: ^1.10.9
+  mobx_codegen: ^1.1.2
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
