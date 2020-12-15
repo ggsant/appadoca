@@ -1,6 +1,6 @@
 import 'package:appadoca/app/UI/screens/UI/menuHome.dart';
 import 'package:appadoca/app/UI/screens/create_account.dart';
-import 'package:appadoca/app/UI/screens/home.dart';
+import 'package:appadoca/app/UI/screens/login.dart';
 import 'package:appadoca/app/UI/screens/onboarding.dart';
 import 'package:appadoca/app/UI/screens/profile.dart';
 import 'package:appadoca/app/UI/screens/sign/signIn_step1.dart';

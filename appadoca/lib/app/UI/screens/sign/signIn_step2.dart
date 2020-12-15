@@ -55,7 +55,6 @@ class _SignInStepTwoScreenState extends State<SignInStepTwoScreen> {
                               child: TextFormField(
                                 decoration: InputDecoration(
                                   hintText: "E-mail",
-                                  labelText: 'E-mail *',
                                   labelStyle: TextStyle(
                                       color: ThemeColors.primaryColor),
                                   hintStyle: TextStyle(
