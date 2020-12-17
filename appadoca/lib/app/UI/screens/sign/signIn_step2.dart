@@ -1,7 +1,6 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:appadoca/app/resources/theme_colors.dart';
 import 'package:appadoca/app/utils/routes.dart';
-import 'package:form_field_validator/form_field_validator.dart';
 
 import 'package:flutter/material.dart';
 

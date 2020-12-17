@@ -1,11 +1,28 @@
 import 'package:appadoca/app/UI/widgets/adress.dart';
 import 'package:appadoca/app/UI/widgets/ordemCardItem.dart';
-import 'package:appadoca/app/UI/widgets/payment.dart';
 import 'package:appadoca/app/resources/theme_colors.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class CartScreen extends StatelessWidget {
+  CartScreen({
+    this.title,
+    this.description,
+    this.unit,
+    this.price,
+    this.entrega,
+    this.subTotal,
+    this.total,
+    this.image,
+  });
+  final String title;
+  final String description;
+  final String unit;
+  final String price;
+  final String entrega;
+  final String total;
+  final String subTotal;
+  final String image;
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -21,10 +38,16 @@ class CartScreen extends StatelessWidget {
                   children: [
                     Adress(),
                     SizedBox(height: 20),
-                    OrderCardItem(),
-                    SizedBox(height: 20),
-                    Payment(),
-                    SizedBox(height: 100)
+                    OrderCardItem(
+                      title: title,
+                      description: description,
+                      unit: unit,
+                      price: price,
+                      entrega: entrega,
+                      total: total,
+                      subTotal: subTotal,
+                      image: image,
+                    ),
                   ],
                 ),
               ),
@@ -86,57 +109,5 @@ class HomeCard extends StatelessWidget {
         ),
       ),
     );
-  }
-}
-
-class LeftPartBNBCustomPainter extends CustomPainter {
-  @override
-  void paint(Canvas canvas, Size size) {
-    Paint paint = Paint()
-      ..color = Colors.white
-      ..style = PaintingStyle.fill
-      ..strokeWidth = 8.0;
-    Path path = Path()..moveTo(size.width, 0);
-    path.quadraticBezierTo(
-        size.width * 0.8, size.height * 0.5, size.width, size.height);
-    path.lineTo(size.width * 0.2, size.height);
-    path.quadraticBezierTo(0, size.height, 0, size.height * 0.3);
-
-    path.lineTo(0, size.height * 0.5);
-    path.quadraticBezierTo(0, 0, size.width * 0.2, 0);
-    path.close();
-    canvas.drawShadow(path, Colors.black, 0.25, true);
-    canvas.drawPath(path, paint);
-  }
-
-  @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) {
-    return false;
-  }
-}
-
-class RightPartBNBCustomPainter extends CustomPainter {
-  @override
-  void paint(Canvas canvas, Size size) {
-    Paint paint = Paint()
-      ..color = Colors.white
-      ..style = PaintingStyle.fill
-      ..strokeWidth = 5.0;
-    Path path = Path()..moveTo(0, 0);
-    path.lineTo(size.width * 0.8, 0);
-    path.quadraticBezierTo(size.width, 0, size.width, size.height * 0.5);
-    path.lineTo(size.width, size.height * 0.4);
-    path.quadraticBezierTo(
-        size.width, size.height, size.width * 0.8, size.height);
-    path.lineTo(0, size.height);
-    path.quadraticBezierTo(size.width * 0.2, size.height * 0.5, 0, 0);
-    path.close();
-    canvas.drawShadow(path, Colors.black, 0.25, true);
-    canvas.drawPath(path, paint);
-  }
-
-  @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) {
-    return false;
   }
 }

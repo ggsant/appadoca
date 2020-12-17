@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/screenutil.dart';
 
-import 'app/UI/screens/login.dart';
+import 'app/UI/screens/sign/login.dart';
 import 'app/resources/theme_colors.dart';
 
 void main() {

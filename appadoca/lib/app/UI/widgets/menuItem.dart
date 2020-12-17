@@ -1,7 +1,6 @@
+import 'package:appadoca/app/UI/screens/home/inicio/detailsPage.dart';
 import 'package:appadoca/app/resources/theme_colors.dart';
 import 'package:flutter/material.dart';
-
-import 'detailsPage.dart';
 
 class MenuItem extends StatelessWidget {
   MenuItem({
@@ -11,6 +10,10 @@ class MenuItem extends StatelessWidget {
     this.detailDescription,
     this.price,
     this.isAvailable,
+    this.unit,
+    this.entrega,
+    this.subTotal,
+    this.total,
   });
   final String imagem;
   final String title;
@@ -18,6 +21,10 @@ class MenuItem extends StatelessWidget {
   final String detailDescription;
   final String price;
   final bool isAvailable;
+  final String unit;
+  final String entrega;
+  final String subTotal;
+  final String total;
   @override
   Widget build(BuildContext context) {
     return Expanded(
@@ -31,6 +38,10 @@ class MenuItem extends StatelessWidget {
               price: price,
               isAvailable: isAvailable,
               img: imagem,
+              unit: unit,
+              entrega: entrega,
+              subTotal: subTotal,
+              total: total,
             ),
           ),
         );

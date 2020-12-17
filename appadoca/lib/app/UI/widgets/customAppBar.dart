@@ -1,4 +1,3 @@
-import 'package:appadoca/app/UI/widgets/shoppingCart.dart';
 import 'package:appadoca/app/resources/theme_colors.dart';
 import 'package:flutter/material.dart';
 

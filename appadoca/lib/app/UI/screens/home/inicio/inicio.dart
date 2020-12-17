@@ -1,6 +1,5 @@
 import 'package:appadoca/app/UI/widgets/customAppBar.dart';
 import 'package:appadoca/app/UI/widgets/customMenuList.dart';
-import 'package:appadoca/app/UI/widgets/detailsPage.dart';
 import 'package:appadoca/app/UI/widgets/menuItem.dart';
 import 'package:flutter/material.dart';
 
@@ -24,6 +23,10 @@ class _InicioScreenState extends State<InicioScreen> {
           isAvailable: true,
           detailDescription:
               'Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem ',
+          entrega: 'Gratis',
+          unit: '1',
+          subTotal: '10,00',
+          total: '10,00',
         ),
         MenuItem(
           imagem: 'assets/cake2.jpg',
@@ -33,6 +36,10 @@ class _InicioScreenState extends State<InicioScreen> {
           isAvailable: true,
           detailDescription:
               'Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem ',
+          entrega: 'Gratis',
+          unit: '1',
+          subTotal: '10,00',
+          total: '10,00',
         ),
         MenuItem(
           imagem: 'assets/cupcakes.jpg',
@@ -42,6 +49,10 @@ class _InicioScreenState extends State<InicioScreen> {
           isAvailable: true,
           detailDescription:
               'Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem ',
+          entrega: 'Gratis',
+          unit: '1',
+          subTotal: '10,00',
+          total: '10,00',
         ),
         MenuItem(
           imagem: 'assets/bread.jpg',
@@ -51,6 +62,10 @@ class _InicioScreenState extends State<InicioScreen> {
           isAvailable: true,
           detailDescription:
               'Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem ',
+          entrega: 'Gratis',
+          unit: '1',
+          subTotal: '10,00',
+          total: '10,00',
         ),
         MenuItem(
           imagem: 'assets/panettone.jpg',
@@ -60,6 +75,10 @@ class _InicioScreenState extends State<InicioScreen> {
           isAvailable: true,
           detailDescription:
               'Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem ',
+          entrega: 'Gratis',
+          unit: '1',
+          subTotal: '10,00',
+          total: '10,00',
         ),
         MenuItem(
           imagem: 'assets/cake4.jpg',
@@ -69,6 +88,10 @@ class _InicioScreenState extends State<InicioScreen> {
           isAvailable: true,
           detailDescription:
               'Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem ',
+          entrega: 'Gratis',
+          unit: '1',
+          subTotal: '10,00',
+          total: '10,00',
         ),
       ],
     );

@@ -33,30 +33,7 @@ class MapScreenState extends State<ProfileScreen>
                     height: 250.0,
                     child: Column(
                       children: <Widget>[
-                        Padding(
-                            padding: EdgeInsets.only(left: 20.0, top: 20.0),
-                            child: Row(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: <Widget>[
-                                Icon(
-                                  Icons.arrow_back_ios,
-                                  color: ThemeColors.kPrimaryColor,
-                                  size: 22.0,
-                                ),
-                                Padding(
-                                  padding: EdgeInsets.only(left: 25.0),
-                                  child: Text(
-                                    'Perfil',
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 20.0,
-                                      fontFamily: 'sans-serif-light',
-                                      color: Colors.white,
-                                    ),
-                                  ),
-                                )
-                              ],
-                            )),
+                        SizedBox(height: 30.0),
                         Padding(
                           padding: EdgeInsets.only(top: 20.0),
                           child: Stack(fit: StackFit.loose, children: <Widget>[

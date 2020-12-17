@@ -1,17 +1,30 @@
-import 'package:appadoca/app/UI/screens/UI/order.dart';
+import 'package:appadoca/app/UI/widgets/button.dart';
 import 'package:appadoca/app/resources/theme_colors.dart';
 import 'package:flutter/material.dart';
 
-import 'button.dart';
+import 'order.dart';
 
 class DetailsPage extends StatelessWidget {
-  DetailsPage(
-      {this.title, this.description, this.price, this.isAvailable, this.img});
+  DetailsPage({
+    this.title,
+    this.description,
+    this.price,
+    this.isAvailable,
+    this.img,
+    this.unit,
+    this.entrega,
+    this.subTotal,
+    this.total,
+  });
   final String title;
   final String description;
   final String price;
   final bool isAvailable;
   final String img;
+  final String unit;
+  final String entrega;
+  final String total;
+  final String subTotal;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -136,12 +149,15 @@ class DetailsPage extends StatelessWidget {
                         Navigator.of(context).push(
                           MaterialPageRoute(
                             builder: (context) => CartScreen(
-                                // title: title,
-                                // description: description,
-                                // price: price,
-                                // isAvailable: isAvailable,
-                                // img: img,
-                                ),
+                              title: title,
+                              description: description,
+                              price: price,
+                              entrega: entrega,
+                              total: total,
+                              unit: unit,
+                              subTotal: subTotal,
+                              image: img,
+                            ),
                           ),
                         );
                       },

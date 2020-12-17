@@ -1,4 +1,3 @@
-import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:appadoca/app/UI/widgets/button.dart';
 import 'package:appadoca/app/resources/theme_colors.dart';
 import 'package:appadoca/app/utils/routes.dart';
