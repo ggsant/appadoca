@@ -1,6 +1,5 @@
 import 'package:appadoca/app/UI/widgets/customAppBar.dart';
 import 'package:appadoca/app/UI/widgets/customMenuList.dart';
-import 'package:appadoca/app/UI/widgets/CustomOrderCard.dart';
 import 'package:appadoca/app/UI/widgets/pedidosCard.dart';
 import 'package:appadoca/app/UI/widgets/promoCard.dart';
 import 'package:flutter/material.dart';
